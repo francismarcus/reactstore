@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "sku": 7111,
+      "title": "Alphabounce Instinct",
+      "description": "Adidas",
+      "price": 1099
+    },
+    {
+      "id": 2,
+      "sku": 1192,
+      "title": "Gelsaga",
+      "description": "Asics Tiger",
+      "price": 1200
+    },
+    {
+      "id": 3,
+      "sku": 5040,
+      "title": "Atom Slon White",
+      "description": "Hugo",
+      "price": 2299
+    },
+
+    {
+      "id": 4,
+      "sku": 1031,
+      "title": "Fit Sock 1192",
+      "description": "Lacoste",
+      "price": 1299
+    },
+
+    {
+      "id": 5,
+      "sku": 2929,
+      "title": "Pod-S3.1",
+      "description": "Adidas",
+      "price": 1199
+    },
+
+    {
+      "id": 6,
+      "sku": 4214,
+      "title": "CLR 51.N",
+      "description": "Clarks",
+      "price": 1999
+    }
+  ]
+}
