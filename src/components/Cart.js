@@ -36,7 +36,7 @@ export default function List(props) {
       return product.price;
     });
 
-    const Total = Price.reduce(function(previous, product) {
+    const Total = Price.reduce((previous, product) => {
       return (product += previous);
     }, 0);
 
