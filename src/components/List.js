@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useReducer, useContext } from "react";
+import cartReducer from "reducers";
+import { initialState, Context } from "store";
 
 export default function List(props) {
+  const { store, dispatch } = useContext(Context);
+
   const ProductItems = props.products.map(product => (
     <div class="column">
-      <div class="ui centered card">
+      <div class="ui centered small card">
         <img
           class="ui centered small image"
           src={`products/${product.sku}.jpg`}
