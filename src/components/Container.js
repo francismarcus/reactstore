@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useReducer } from "react";
 import { Context, initialState } from "store";
 import cartReducer from "reducers";
-import axios from 'axios';
+import axios from "axios";
 import List from "components/List";
+import Cart from "components/Cart";
+import Header from "components/Header";
 
 export default function Component() {
   const [products, setProducts] = useState([]);
@@ -28,7 +30,9 @@ export default function Component() {
   return (
     <Context.Provider value={{ store, dispatch }}>
       <>
+        <Header />
         <List products={products} addProduct={addProduct} />
+        <Cart removeProduct={removeProduct} />
       </>
     </Context.Provider>
   );
